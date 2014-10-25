@@ -15,27 +15,44 @@ import MediaPlayer
 class SecondViewController: UIViewController {
     
 
-
+var playorpause = true
     
 //    playerMP.MPVolumeView
     
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     
     @IBAction func playButtonPressed(sender: AnyObject) {
-        playerMP.play()
-    }
-
-    @IBAction func pauseButtonPressed(sender: AnyObject) {
-        playerMP.pause()
+        
+        if playorpause == true {
+            playerMP.play()
+            playButton.alpha = 0
+            pauseButton.alpha = 1
+            playorpause = false
+        } else {
+            playerMP.pause()
+            pauseButton.alpha = 0
+            playButton.alpha = 1
+            playorpause = true
+        }
+        
     }
 
     @IBAction func nextButtonPressed(sender: AnyObject) {
         playerMP.skipToNextItem()
     }
     
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        playerMP.skipToPreviousItem()
+    }
+    
+    
     @IBOutlet weak var artworkImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playorpause = true
+        pauseButton.alpha = 0
 
     }
    
