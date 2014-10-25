@@ -23,27 +23,50 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     
     @IBAction func playButtonPressed(sender: AnyObject) {
-        checkPlayOrPause()
-        updateNowPlayingInfo()
+        songPlaying = playerMP.nowPlayingItem
+        var lastItem = itemsArray[itemsArray.count - 1] as? NSObject
+        var firstItem = itemsArray[0] as? NSObject
+        if  songPlaying != lastItem && songPlaying != firstItem {
+            checkPlayOrPause()
+            updateNowPlayingInfo()
+        } else {
+            currentSong = itemsArray[itemsArray.count / 2] as MPMediaItem
+            playNow()
+            updateNowPlayingInfo()
+        }
         
     }
 
     @IBAction func nextButtonPressed(sender: AnyObject) {
-        if songPlaying != nil {
+        songPlaying = playerMP.nowPlayingItem
+        if  songPlaying != itemsArray[itemsArray.count - 1] as? NSObject {
             playerMP.skipToNextItem()
             updateNowPlayingInfo()
         } else {
-            playerMP.stop()
-            pauseButton.alpha = 0
             playorpause = false
+            checkPlayOrPause()
+            currentSong = itemsArray[itemsArray.count / 2] as MPMediaItem
+            playNow()
+            updateNowPlayingInfo()
+            playerMP.stop()
         }
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {
-        playerMP.skipToPreviousItem()
-        updateNowPlayingInfo()
+        songPlaying = playerMP.nowPlayingItem
+        if  songPlaying != itemsArray[0] as? NSObject {
+            
+            playerMP.skipToPreviousItem()
+            updateNowPlayingInfo()
+        } else {
+            playorpause = false
+            checkPlayOrPause()
+            currentSong = itemsArray[itemsArray.count / 2] as MPMediaItem
+            playNow()
+            updateNowPlayingInfo()
+            playerMP.stop()
+        }
     }
-    
     
     @IBOutlet weak var artworkImageView: UIImageView!
     @IBOutlet weak var songTitleLabel: UILabel!
@@ -53,9 +76,6 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         updateNowPlayingInfo()
         checkPlayOrPause()
-        
-    
-    
         
     }
     
@@ -76,12 +96,15 @@ class SecondViewController: UIViewController {
             playButton.alpha = 0
             pauseButton.alpha = 1
             playorpause = false
-        } else {
+        } else if playorpause == false{
             playerMP.pause()
             pauseButton.alpha = 0
             playButton.alpha = 1
             playorpause = true
+        } else {
+            println("error")
         }
+        
     }
     
     

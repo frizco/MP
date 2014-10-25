@@ -11,11 +11,14 @@ import MediaPlayer
 
 var playerMP = MPMusicPlayerController()
 
+var mediaCollection = MPMediaItemCollection?()
+
 
 func playNow() {
     if MPMediaQuery.genresQuery().items.count != 0 {
         let songs = MPMediaQuery.songsQuery().items
-        let mediaCollection = MPMediaItemCollection(items: songs)
+        mediaCollection = MPMediaItemCollection(items: songs)
+
         playerMP = MPMusicPlayerController.iPodMusicPlayer()
         playerMP.stop()
         playerMP.setQueueWithItemCollection(mediaCollection)
