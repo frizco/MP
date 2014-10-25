@@ -210,7 +210,7 @@
         <image name="Back" width="63" height="48"/>
         <image name="Back Button" width="67" height="20"/>
         <image name="Forward" width="63" height="48"/>
-        <image name="NowPlaying" width="18" height="23"/>
+        <image name="NowPlaying" width="12" height="15"/>
         <image name="Pause" width="123" height="123"/>
         <image name="Playing" width="123" height="123"/>
         <image name="TopBar" width="375" height="65"/>
