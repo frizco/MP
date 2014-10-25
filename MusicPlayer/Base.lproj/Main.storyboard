@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="TopBar" translatesAutoresizingMaskIntoConstraints="NO" id="jZL-TX-RmU">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="TopBar" translatesAutoresizingMaskIntoConstraints="NO" id="jZL-TX-RmU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urb-B3-DSo" userLabel="Pause">
@@ -139,7 +139,7 @@
                                 <rect key="frame" x="0.0" y="65" width="375" height="350"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="miK-5O-AgR" secondAttribute="bottom" constant="62" id="0P5-Gf-lBv"/>
                             <constraint firstAttribute="centerX" secondItem="Dzf-P5-hDv" secondAttribute="centerX" id="FsX-Uw-c7p"/>
@@ -219,6 +219,6 @@
         <image name="musicnote" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tsc-mf-675"/>
+        <segue reference="lzU-1b-eKA"/>
     </inferredMetricsTieBreakers>
 </document>

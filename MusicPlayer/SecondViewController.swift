@@ -29,9 +29,14 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func nextButtonPressed(sender: AnyObject) {
-        playerMP.skipToNextItem()
-        updateNowPlayingInfo()
-        
+        if songPlaying != nil {
+            playerMP.skipToNextItem()
+            updateNowPlayingInfo()
+        } else {
+            playerMP.stop()
+            pauseButton.alpha = 0
+            playorpause = false
+        }
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {

@@ -19,9 +19,7 @@ func playNow() {
         playerMP = MPMusicPlayerController.iPodMusicPlayer()
         playerMP.stop()
         playerMP.setQueueWithItemCollection(mediaCollection)
-//        if currentSong != nil {
-            playerMP.nowPlayingItem = currentSong as? MPMediaItem
-//        }
+        playerMP.nowPlayingItem = currentSong as? MPMediaItem
         playerMP.play()
         
     }
