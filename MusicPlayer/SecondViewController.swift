@@ -56,10 +56,11 @@ var playorpause = true
         
         
         var songPlaying = playerMP.nowPlayingItem
-        println(songPlaying.valueForProperty(MPMediaItemPropertyTitle))
-        println(songPlaying.valueForProperty(MPMediaItemPropertyArtist))
-        println(songPlaying.valueForProperty(MPMediaItemPropertyArtwork))
-        println(songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle))
+        println("Song: \(songPlaying.valueForProperty(MPMediaItemPropertyTitle))")
+        println("Artist: \(songPlaying.valueForProperty(MPMediaItemPropertyArtist))")
+        println("Artwork: \(songPlaying.valueForProperty(MPMediaItemPropertyArtwork))")
+        println("Album: \(songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle))")
+        println("Lyrics: \(songPlaying.valueForProperty(MPMediaItemPropertyLyrics))")
         
     }
    
