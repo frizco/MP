@@ -60,10 +60,10 @@ var playorpause = true
         songTitleLabel.text = songPlaying.valueForProperty(MPMediaItemPropertyTitle) as? String
         
         var artistString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
-        var albumString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
-        artistAndAlbumLabel.text = artistString! + "-" + albumString!
+        var albumString = songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle) as? String
+        artistAndAlbumLabel.text = artistString! + " - " + albumString!
         
-        artworkImageView.image = songPlaying.valueForProperty(MPMediaItemPropertyArtwork).imageWithSize(CGSizeMake(100, 100))
+        artworkImageView.image = songPlaying.valueForProperty(MPMediaItemPropertyArtwork).imageWithSize(CGSizeMake(110, 110))
 
     
         
