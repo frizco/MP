@@ -53,6 +53,11 @@ var playorpause = true
         super.viewDidLoad()
         playorpause = true
         pauseButton.alpha = 0
+        
+        
+        println(currentSong?.valueForProperty(MPMediaItemPropertyTitle))
+        println(currentSong?.valueForProperty(MPMediaItemPropertyArtist))
+        println(currentSong?.valueForProperty(MPMediaItemPropertyAlbumTitle))
 
     }
    
