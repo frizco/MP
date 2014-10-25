@@ -91,7 +91,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView!,willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath! {
         currentSong = itemsArray[indexPath.row]
         playNow()
+        playorpause = true
         return indexPath
+        
     }
 
     

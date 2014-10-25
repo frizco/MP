@@ -11,11 +11,11 @@ import MediaPlayer
 
 
 
+var playorpause = Bool()
+var songPlaying = playerMP.nowPlayingItem
 
 class SecondViewController: UIViewController {
-    
 
-var playorpause = true
     
 //    playerMP.MPVolumeView
     
@@ -23,7 +23,49 @@ var playorpause = true
     @IBOutlet weak var playButton: UIButton!
     
     @IBAction func playButtonPressed(sender: AnyObject) {
+        checkPlayOrPause()
+        updateNowPlayingInfo()
         
+    }
+
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        playerMP.skipToNextItem()
+        updateNowPlayingInfo()
+        
+    }
+    
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        playerMP.skipToPreviousItem()
+        updateNowPlayingInfo()
+    }
+    
+    
+    @IBOutlet weak var artworkImageView: UIImageView!
+    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var artistAndAlbumLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateNowPlayingInfo()
+        checkPlayOrPause()
+        
+    
+    
+        
+    }
+    
+    func updateNowPlayingInfo () {
+        
+        songPlaying = playerMP.nowPlayingItem
+        artworkImageView.image = songPlaying.valueForProperty(MPMediaItemPropertyArtwork).imageWithSize(CGSizeMake(110, 110))
+        var artistString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
+        var albumString = songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle) as? String
+        artistAndAlbumLabel.text = artistString! + " - " + albumString!
+        songTitleLabel.text = songPlaying.valueForProperty(MPMediaItemPropertyTitle) as? String
+        
+    }
+    
+    func checkPlayOrPause () {
         if playorpause == true {
             playerMP.play()
             playButton.alpha = 0
@@ -35,40 +77,8 @@ var playorpause = true
             playButton.alpha = 1
             playorpause = true
         }
-        
-    }
-
-    @IBAction func nextButtonPressed(sender: AnyObject) {
-        playerMP.skipToNextItem()
     }
     
-    @IBAction func backButtonPressed(sender: AnyObject) {
-        playerMP.skipToPreviousItem()
-    }
-    
-    
-    @IBOutlet weak var artworkImageView: UIImageView!
-    @IBOutlet weak var songTitleLabel: UILabel!
-    @IBOutlet weak var artistAndAlbumLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        playorpause = true
-        pauseButton.alpha = 0
-        
-        var songPlaying = playerMP.nowPlayingItem
-        songTitleLabel.text = songPlaying.valueForProperty(MPMediaItemPropertyTitle) as? String
-        
-        var artistString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
-        var albumString = songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle) as? String
-        artistAndAlbumLabel.text = artistString! + " - " + albumString!
-        
-        artworkImageView.image = songPlaying.valueForProperty(MPMediaItemPropertyArtwork).imageWithSize(CGSizeMake(110, 110))
-
-    
-        
-    }
-   
     
 
     
