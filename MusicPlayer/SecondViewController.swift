@@ -48,19 +48,21 @@ var playorpause = true
     
     
     @IBOutlet weak var artworkImageView: UIImageView!
+    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var artistAndAlbumLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playorpause = true
         pauseButton.alpha = 0
         
-        
         var songPlaying = playerMP.nowPlayingItem
-        println("Song: \(songPlaying.valueForProperty(MPMediaItemPropertyTitle))")
-        println("Artist: \(songPlaying.valueForProperty(MPMediaItemPropertyArtist))")
-        println("Artwork: \(songPlaying.valueForProperty(MPMediaItemPropertyArtwork))")
-        println("Album: \(songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle))")
-        println("Lyrics: \(songPlaying.valueForProperty(MPMediaItemPropertyLyrics))")
+        songTitleLabel.text = songPlaying.valueForProperty(MPMediaItemPropertyTitle) as? String
+        
+        var artistString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
+        var albumString = songPlaying.valueForProperty(MPMediaItemPropertyArtist) as? String
+        artistAndAlbumLabel.text = artistString! + "-" + albumString!
+    
         
     }
    
