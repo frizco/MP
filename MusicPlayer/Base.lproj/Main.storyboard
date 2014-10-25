@@ -134,6 +134,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="artistAndAlbum" destination="thh-32-sB5" id="AKS-83-ZpA"/>
+                        <outlet property="artistAndAlbumLabel" destination="thh-32-sB5" id="uVN-om-jd0"/>
                         <outlet property="artworkImageView" destination="bWr-LU-ahf" id="maO-Nr-Iqd"/>
                         <outlet property="pauseButton" destination="Urb-B3-DSo" id="KGi-D6-0Jz"/>
                         <outlet property="playButton" destination="Dzf-P5-hDv" id="2Bj-Fd-70y"/>
