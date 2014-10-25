@@ -55,10 +55,12 @@ var playorpause = true
         pauseButton.alpha = 0
         
         
-        println(currentSong?.valueForProperty(MPMediaItemPropertyTitle))
-        println(currentSong?.valueForProperty(MPMediaItemPropertyArtist))
-        println(currentSong?.valueForProperty(MPMediaItemPropertyAlbumTitle))
-
+        var songPlaying = playerMP.nowPlayingItem
+        println(songPlaying.valueForProperty(MPMediaItemPropertyTitle))
+        println(songPlaying.valueForProperty(MPMediaItemPropertyArtist))
+        println(songPlaying.valueForProperty(MPMediaItemPropertyArtwork))
+        println(songPlaying.valueForProperty(MPMediaItemPropertyAlbumTitle))
+        
     }
    
     
