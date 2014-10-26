@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD9ED2B19FCF79A0075405C /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9ED2A19FCF79A0075405C /* launchscreen.png */; };
 		B12CCD9B19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */; };
 		B12CCD9E19F66D90006FB8A1 /* stevehitmike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */; };
 		B170152D19F64DF8002A5B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170152C19F64DF8002A5B04 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD9ED2A19FCF79A0075405C /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
 		B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 Twelve Feet Under.mp3"; sourceTree = "<group>"; };
 		B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stevehitmike.jpg; sourceTree = "<group>"; };
 		B170152719F64DF8002A5B04 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				B170153019F64DF8002A5B04 /* SecondViewController.swift */,
 				B170153219F64DF8002A5B04 /* Main.storyboard */,
 				B170153519F64DF8002A5B04 /* Images.xcassets */,
+				0BD9ED2A19FCF79A0075405C /* launchscreen.png */,
 				B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */,
 				B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */,
 				B170153719F64DF8002A5B04 /* LaunchScreen.xib */,
@@ -186,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B170152219F64DF8002A5B04 /* Build configuration list for PBXProject "MusicPlayer" */;
+			buildConfigurationList = B170152219F64DF8002A5B04 /* Build configuration list for PBXProject "Music Player" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,6 +215,7 @@
 			files = (
 				B12CCD9E19F66D90006FB8A1 /* stevehitmike.jpg in Resources */,
 				B170153419F64DF8002A5B04 /* Main.storyboard in Resources */,
+				0BD9ED2B19FCF79A0075405C /* launchscreen.png in Resources */,
 				B170153919F64DF8002A5B04 /* LaunchScreen.xib in Resources */,
 				B170153619F64DF8002A5B04 /* Images.xcassets in Resources */,
 				B12CCD9B19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 in Resources */,
@@ -358,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
@@ -373,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
@@ -427,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B170152219F64DF8002A5B04 /* Build configuration list for PBXProject "MusicPlayer" */ = {
+		B170152219F64DF8002A5B04 /* Build configuration list for PBXProject "Music Player" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B170154619F64DF8002A5B04 /* Debug */,
