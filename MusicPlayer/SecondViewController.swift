@@ -42,6 +42,9 @@ class SecondViewController: UIViewController {
         if  songPlaying != itemsArray[itemsArray.count - 1] as? NSObject {
             playerMP.skipToNextItem()
             updateNowPlayingInfo()
+            
+            println("BPM: \(songPlaying.valueForProperty(MPMediaItemPropertyBeatsPerMinute))")
+            
         } else {
             playorpause = false
             checkPlayOrPause()

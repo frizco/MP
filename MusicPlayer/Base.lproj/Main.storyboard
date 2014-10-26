@@ -106,7 +106,7 @@
                                     <constraint firstAttribute="height" constant="75" id="ToU-K2-wa4"/>
                                     <constraint firstAttribute="width" constant="75" id="iGz-LT-fZO"/>
                                 </constraints>
-                                <state key="normal" image="Playing">
+                                <state key="normal" image="Now Playing">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -116,7 +116,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2Z-FQ-GW9" userLabel="Song title">
                                 <rect key="frame" x="16" y="427" width="343" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thh-32-sB5" userLabel="Artist/Album title">
@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="65" width="375" height="350"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="miK-5O-AgR" secondAttribute="bottom" constant="62" id="0P5-Gf-lBv"/>
                             <constraint firstAttribute="centerX" secondItem="Dzf-P5-hDv" secondAttribute="centerX" id="FsX-Uw-c7p"/>
@@ -152,7 +152,7 @@
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="cK1-6e-h5u" secondAttribute="bottom" constant="62" id="ziE-uK-HjC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Now Playing" image="NowPlaying" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="BottomBarPlay" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="jQD-TU-HFs"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
@@ -211,12 +211,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back" width="63" height="48"/>
+        <image name="Back" width="82" height="63"/>
         <image name="Back Button" width="67" height="20"/>
-        <image name="Forward" width="63" height="48"/>
-        <image name="NowPlaying" width="12" height="15"/>
-        <image name="Pause" width="123" height="123"/>
-        <image name="Playing" width="123" height="123"/>
+        <image name="BottomBarPlay" width="12" height="15"/>
+        <image name="Forward" width="82" height="63"/>
+        <image name="Now Playing" width="166" height="166"/>
+        <image name="Pause" width="166" height="166"/>
         <image name="TopBar" width="375" height="65"/>
         <image name="musicnote" width="16" height="16"/>
     </resources>
