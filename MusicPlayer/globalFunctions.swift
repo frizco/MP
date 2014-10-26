@@ -13,6 +13,14 @@ var playerMP = MPMusicPlayerController()
 
 var mediaCollection = MPMediaItemCollection?()
 
+func makeNiceStrings(var songAndArtist: String) {
+    songAndArtist = songAndArtist.lowercaseString
+    songAndArtist = songAndArtist.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    songAndArtist = songAndArtist.stringByTrimmingCharactersInSet(NSCharacterSet.symbolCharacterSet())
+    println(songAndArtist)
+}
+
+
 
 func playNow() {
     if MPMediaQuery.genresQuery().items.count != 0 {
@@ -25,8 +33,14 @@ func playNow() {
         playerMP.nowPlayingItem = currentSong as? MPMediaItem
         playerMP.play()
         playorpause = true
+        makeNiceStrings("In for the kill Skrillex")
+        
     }
+    
+    
+
 }
+
 
 
 

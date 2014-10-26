@@ -75,7 +75,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         updateNowPlayingInfo()
         checkPlayOrPause()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateNowPlayingInfo"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("updateNowPlayingInfo"), userInfo: nil, repeats: true)
     }
     
     func updateNowPlayingInfo () {

@@ -38,6 +38,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 artistArray.append(artist)
                 itemsArray.append(song)
         }
+       
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
