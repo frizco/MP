@@ -16,7 +16,7 @@ var songPlaying = playerMP.nowPlayingItem
 
 class SecondViewController: UIViewController {
 
-    
+    var timer = NSTimer()
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
@@ -75,7 +75,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         updateNowPlayingInfo()
         checkPlayOrPause()
-        
+        timer = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("updateNowPlayingInfo"), userInfo: nil, repeats: true)
     }
     
     func updateNowPlayingInfo () {
@@ -88,6 +88,7 @@ class SecondViewController: UIViewController {
         songTitleLabel.text = songPlaying.valueForProperty(MPMediaItemPropertyTitle) as? String
         
     }
+
     
     func checkPlayOrPause () {
         if playorpause == true {
