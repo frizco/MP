@@ -19,7 +19,7 @@ func playNow() {
         let songs = MPMediaQuery.songsQuery().items
         mediaCollection = MPMediaItemCollection(items: songs)
 
-        playerMP = MPMusicPlayerController.iPodMusicPlayer()
+        playerMP = MPMusicPlayerController.applicationMusicPlayer()
         playerMP.stop()
         playerMP.setQueueWithItemCollection(mediaCollection)
         playerMP.nowPlayingItem = currentSong as? MPMediaItem
