@@ -24,7 +24,7 @@ func playNow() {
         playerMP.setQueueWithItemCollection(mediaCollection)
         playerMP.nowPlayingItem = currentSong as? MPMediaItem
         playerMP.play()
-        
+        playorpause = true
     }
 }
 

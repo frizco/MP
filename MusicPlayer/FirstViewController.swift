@@ -23,8 +23,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if MPMediaQuery.artistsQuery().items.count != 0 {
-//            let songs = MPMediaQuery.songsQuery().items
+//        if MPMediaQuery.artistsQuery().items.count != 0
             numberOfSongs = 0
             for song in MPMediaQuery.songsQuery().items {
                 var songTitle: AnyObject! = song.valueForProperty(MPMediaItemPropertyTitle)
@@ -38,28 +37,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 artworkArray.append(artwork)
                 artistArray.append(artist)
                 itemsArray.append(song)
-                
-//            }
-
-//            MPMediaItemArtwork *artWork = [mItem valueForProperty:MPMediaItemPropertyArtwork];
-//            
-//            cell.imageView.image = [artWork imageWithSize:CGSizeMake(30, 30)];
-            
-            
-            
-//            self.currentSongname = currentItem.valueForProperty.MPMediaItemPropertyTitle
-//            let MPMediaItemPropertyBeatsPerMinute: NSString!
-            
-            
-//            NSLog(@"Logging items from a generic query...");
-//            NSArray *itemsFromGenericQuery = [everything items];
-//            for (MPMediaItem *song in itemsFromGenericQuery) {
-//                NSString *songTitle = [song valueForProperty: MPMediaItemPropertyTitle];
-//                NSLog (@"%@", songTitle);}
-
         }
-      
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,23 +69,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView!,willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath! {
         currentSong = itemsArray[indexPath.row]
         playNow()
-        playorpause = true
         return indexPath
         
     }
 
     
-    
-
-    
-    
-//    func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
-//        // #warning Potentially incomplete method implementation.
-//        // Return the number of sections.
-//        return 3
-//    }
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

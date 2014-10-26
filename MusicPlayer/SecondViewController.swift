@@ -17,8 +17,6 @@ var songPlaying = playerMP.nowPlayingItem
 class SecondViewController: UIViewController {
 
     
-//    playerMP.MPVolumeView
-    
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
@@ -42,8 +40,6 @@ class SecondViewController: UIViewController {
         if  songPlaying != itemsArray[itemsArray.count - 1] as? NSObject {
             playerMP.skipToNextItem()
             updateNowPlayingInfo()
-            
-            println("BPM: \(songPlaying.valueForProperty(MPMediaItemPropertyBeatsPerMinute))")
             
         } else {
             playorpause = false
@@ -109,9 +105,6 @@ class SecondViewController: UIViewController {
         }
         
     }
-    
-    
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
