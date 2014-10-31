@@ -20,6 +20,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
+    
+    
     @IBAction func playButtonPressed(sender: AnyObject) {
         songPlaying = playerMP.nowPlayingItem
         var lastItem = itemsArray[itemsArray.count - 1] as? NSObject
@@ -76,6 +78,13 @@ class SecondViewController: UIViewController {
         updateNowPlayingInfo()
         checkPlayOrPause()
         timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("updateNowPlayingInfo"), userInfo: nil, repeats: true)
+        
+        
+    
+    }
+    
+    func newSongPlaying (ten: NSNotification) {
+        println("Song changed")
     }
     
     func updateNowPlayingInfo () {

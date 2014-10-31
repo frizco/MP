@@ -8,6 +8,7 @@
 
 import UIKit
 import MediaPlayer
+import Foundation
 
 var numberOfSongs = 10
 var songsArray = [AnyObject]()
@@ -38,7 +39,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 artistArray.append(artist)
                 itemsArray.append(song)
         }
-       
+        
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        
+        notificationCenter.addObserver(self, selector: Selector("newSongPlaying:"), name: MPMusicPlayerControllerVolumeDidChangeNotification, object: MPMusicPlayerController.applicationMusicPlayer())
+    }
+    
+    
+
+    
+
+
+    
+    func newSongPlaying (sender: NSNotification) {
+        println("Song changed")
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +93,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        playerMP.skipToNextItem()
+
     }
 
 

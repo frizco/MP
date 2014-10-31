@@ -59,7 +59,7 @@
             BlueprintIdentifier = "B170152619F64DF8002A5B04"
             BuildableName = "MusicPlayer.app"
             BlueprintName = "MusicPlayer"
-            ReferencedContainer = "container:MusicPlayer.xcodeproj">
+            ReferencedContainer = "container:Music Player.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "B170152619F64DF8002A5B04"
             BuildableName = "MusicPlayer.app"
             BlueprintName = "MusicPlayer"
-            ReferencedContainer = "container:MusicPlayer.xcodeproj">
+            ReferencedContainer = "container:Music Player.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
