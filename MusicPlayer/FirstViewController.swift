@@ -9,6 +9,8 @@
 import UIKit
 import MediaPlayer
 import Foundation
+//import WFConnector
+
 
 var numberOfSongs = 10
 var songsArray = [AnyObject]()
@@ -17,7 +19,6 @@ var artistArray = [AnyObject?]()
 var currentSong: AnyObject? = AnyObject?()
 var itemsArray = [AnyObject]()
 var skip = false
-
 
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -40,9 +41,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 itemsArray.append(song)
         }
         
-        let notificationCenter = NSNotificationCenter.defaultCenter()
         
-        notificationCenter.addObserver(self, selector: Selector("newSongPlaying:"), name: MPMusicPlayerControllerVolumeDidChangeNotification, object: MPMusicPlayerController.applicationMusicPlayer())
     }
     
     

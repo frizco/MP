@@ -10,7 +10,6 @@ import UIKit
 import MediaPlayer
 
 
-
 var playorpause = Bool()
 var songPlaying = playerMP.nowPlayingItem
 

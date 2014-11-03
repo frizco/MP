@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B664EE01A070A3E00AA63BD /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B664EDF1A070A3E00AA63BD /* HRViewController.swift */; };
+		0B664EE31A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B664EE21A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.m */; };
+		0B9C6BD51A0466860060DAFF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BD41A0466860060DAFF /* ExternalAccessory.framework */; };
+		0B9C6BD71A04668E0060DAFF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BD61A04668E0060DAFF /* CoreBluetooth.framework */; };
+		0B9C6BD91A0466940060DAFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BD81A0466940060DAFF /* UIKit.framework */; };
+		0B9C6BDB1A04669A0060DAFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BDA1A04669A0060DAFF /* Foundation.framework */; };
+		0B9C6BDD1A0466A00060DAFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BDC1A0466A00060DAFF /* CoreGraphics.framework */; };
+		0B9C6BDF1A0466BD0060DAFF /* WFConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BDE1A0466BD0060DAFF /* WFConnector.framework */; };
+		0B9C6BE31A04F90F0060DAFF /* HRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C6BE21A04F90F0060DAFF /* HRViewController.m */; };
+		0B9C6BE61A04FD7F0060DAFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C6BE51A04FD7F0060DAFF /* QuartzCore.framework */; };
 		0BD9ED2B19FCF79A0075405C /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9ED2A19FCF79A0075405C /* launchscreen.png */; };
-		B12CCD9B19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */; };
-		B12CCD9E19F66D90006FB8A1 /* stevehitmike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */; };
 		B170152D19F64DF8002A5B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170152C19F64DF8002A5B04 /* AppDelegate.swift */; };
 		B170152F19F64DF8002A5B04 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170152E19F64DF8002A5B04 /* FirstViewController.swift */; };
 		B170153119F64DF8002A5B04 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170153019F64DF8002A5B04 /* SecondViewController.swift */; };
@@ -32,9 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B664EDE1A06C69500AA63BD /* MusicPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MusicPlayer.entitlements; sourceTree = "<group>"; };
+		0B664EDF1A070A3E00AA63BD /* HRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
+		0B664EE11A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_WFSensorConnection+WFSensorConnectionCategory.h"; sourceTree = "<group>"; };
+		0B664EE21A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "_WFSensorConnection+WFSensorConnectionCategory.m"; sourceTree = "<group>"; };
+		0B9C6BD41A0466860060DAFF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		0B9C6BD61A04668E0060DAFF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0B9C6BD81A0466940060DAFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B9C6BDA1A04669A0060DAFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B9C6BDC1A0466A00060DAFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B9C6BDE1A0466BD0060DAFF /* WFConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WFConnector.framework; sourceTree = "<group>"; };
+		0B9C6BE11A04F90F0060DAFF /* HRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRViewController.h; sourceTree = "<group>"; };
+		0B9C6BE21A04F90F0060DAFF /* HRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRViewController.m; sourceTree = "<group>"; };
+		0B9C6BE41A04FA5A0060DAFF /* MusicPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B9C6BE51A04FD7F0060DAFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0BD9ED2A19FCF79A0075405C /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
-		B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 Twelve Feet Under.mp3"; sourceTree = "<group>"; };
-		B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stevehitmike.jpg; sourceTree = "<group>"; };
 		B170152719F64DF8002A5B04 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B170152B19F64DF8002A5B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B170152C19F64DF8002A5B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +75,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9C6BE61A04FD7F0060DAFF /* QuartzCore.framework in Frameworks */,
+				0B9C6BDD1A0466A00060DAFF /* CoreGraphics.framework in Frameworks */,
+				0B9C6BDB1A04669A0060DAFF /* Foundation.framework in Frameworks */,
+				0B9C6BD91A0466940060DAFF /* UIKit.framework in Frameworks */,
+				0B9C6BD71A04668E0060DAFF /* CoreBluetooth.framework in Frameworks */,
+				0B9C6BD51A0466860060DAFF /* ExternalAccessory.framework in Frameworks */,
+				0B9C6BDF1A0466BD0060DAFF /* WFConnector.framework in Frameworks */,
 				B18A9BBB19FB90E000B49A40 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,10 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B9C6BE01A0466C20060DAFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9C6BE51A04FD7F0060DAFF /* QuartzCore.framework */,
+				0B9C6BDE1A0466BD0060DAFF /* WFConnector.framework */,
+				0B9C6BDC1A0466A00060DAFF /* CoreGraphics.framework */,
+				0B9C6BDA1A04669A0060DAFF /* Foundation.framework */,
+				0B9C6BD81A0466940060DAFF /* UIKit.framework */,
+				0B9C6BD61A04668E0060DAFF /* CoreBluetooth.framework */,
+				0B9C6BD41A0466860060DAFF /* ExternalAccessory.framework */,
+				B18A9BBA19FB90DF00B49A40 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B170151E19F64DF8002A5B04 = {
 			isa = PBXGroup;
 			children = (
-				B18A9BBA19FB90DF00B49A40 /* MediaPlayer.framework */,
+				0B9C6BE01A0466C20060DAFF /* Frameworks */,
 				B170152919F64DF8002A5B04 /* MusicPlayer */,
 				B170154119F64DF8002A5B04 /* MusicPlayerTests */,
 				B170152819F64DF8002A5B04 /* Products */,
@@ -91,15 +133,20 @@
 		B170152919F64DF8002A5B04 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				0B664EDE1A06C69500AA63BD /* MusicPlayer.entitlements */,
 				B170152C19F64DF8002A5B04 /* AppDelegate.swift */,
+				0B9C6BE41A04FA5A0060DAFF /* MusicPlayer-Bridging-Header.h */,
+				0B9C6BE11A04F90F0060DAFF /* HRViewController.h */,
+				0B664EE11A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.h */,
+				0B664EE21A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.m */,
+				0B9C6BE21A04F90F0060DAFF /* HRViewController.m */,
 				B170152E19F64DF8002A5B04 /* FirstViewController.swift */,
 				B1A7DC9D19FA2CD500A94212 /* globalFunctions.swift */,
 				B170153019F64DF8002A5B04 /* SecondViewController.swift */,
 				B170153219F64DF8002A5B04 /* Main.storyboard */,
+				0B664EDF1A070A3E00AA63BD /* HRViewController.swift */,
 				B170153519F64DF8002A5B04 /* Images.xcassets */,
 				0BD9ED2A19FCF79A0075405C /* launchscreen.png */,
-				B12CCD9A19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 */,
-				B12CCD9D19F66D90006FB8A1 /* stevehitmike.jpg */,
 				B170153719F64DF8002A5B04 /* LaunchScreen.xib */,
 				B170152A19F64DF8002A5B04 /* Supporting Files */,
 			);
@@ -181,6 +228,11 @@
 					B170152619F64DF8002A5B04 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 65NB8C7JBQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B170153D19F64DF8002A5B04 = {
 						CreatedOnToolsVersion = 6.1;
@@ -213,12 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12CCD9E19F66D90006FB8A1 /* stevehitmike.jpg in Resources */,
 				B170153419F64DF8002A5B04 /* Main.storyboard in Resources */,
 				0BD9ED2B19FCF79A0075405C /* launchscreen.png in Resources */,
 				B170153919F64DF8002A5B04 /* LaunchScreen.xib in Resources */,
 				B170153619F64DF8002A5B04 /* Images.xcassets in Resources */,
-				B12CCD9B19F662D2006FB8A1 /* 04 Twelve Feet Under.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9C6BE31A04F90F0060DAFF /* HRViewController.m in Sources */,
 				B170153119F64DF8002A5B04 /* SecondViewController.swift in Sources */,
+				0B664EE31A07527200AA63BD /* _WFSensorConnection+WFSensorConnectionCategory.m in Sources */,
 				B170152D19F64DF8002A5B04 /* AppDelegate.swift in Sources */,
 				B1A7DC9E19FA2CD600A94212 /* globalFunctions.swift in Sources */,
+				0B664EE01A070A3E00AA63BD /* HRViewController.swift in Sources */,
 				B170152F19F64DF8002A5B04 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +371,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -353,6 +410,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -361,32 +423,51 @@
 		B170154919F64DF8002A5B04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MusicPlayer/MusicPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/\"";
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicPlayer/MusicPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
 		B170154A19F64DF8002A5B04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MusicPlayer/MusicPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/\"";
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicPlayer/MusicPlayer-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
